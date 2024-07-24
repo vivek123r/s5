@@ -1,6 +1,4 @@
-execl systemcall
-
-#include<stdio.h>
+                                                                                     a.c                                                                                               #include<stdio.h>
 #include<sys/types.h>
 #include<unistd.h>
 #include<stdlib.h>
@@ -8,10 +6,11 @@ int main()
   {
    int pid=fork();
    printf("process created");
-	(execl("/bin/date","NULL"));
-   printf("execl executed");	
+        execl("/bin/date", "date", NULL);
+   printf("execl executed");    
     return(0);
   }
+
 
 execv systemcall
 execsys.c
@@ -30,7 +29,7 @@ int main(int argc, char *argv[])
 
 hello.c
 
-
+#include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
 int main(int argc, char *argv[])
