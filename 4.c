@@ -1,4 +1,4 @@
-  GNU nano 6.2                                                                                      a.c                                                                                               #include <stdio.h>
+#include <stdio.h>                                                                                a.c                                                                                               #include <stdio.h>
 #include <unistd.h>
 int main()
 {
